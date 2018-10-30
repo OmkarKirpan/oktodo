@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Todo list with AngularJS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <div ng-controller="TodoCtrl">
+    <h1>To-Do List</h1>
+    <ul>
+      <li ng-repeat="todo in todos">
+        <input type="checkbox" ng-model="todo.done" />
+        <span class="done-{{todo.done|angular}}">{{todo.text|angular}}</span>
+      </li>
+    </ul>
+    <div class="footer">
+      <form>
+        <input class="add-input" placeholder="I need to..." type="text" ng-model="formTodoText" ng-model-instant />
+        <button class="add-btn" ng-click="addTodo()">
+          <h2>Add</h2>
+        </button>
+      </form>
+      <button class="clear-btn" ng-click="clearCompleted()">Clear completed</button>
+    </div>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+  <script src="../js/index.js"></script>
+</body>
+
+</html>
