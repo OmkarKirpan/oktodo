@@ -20,24 +20,18 @@ function TodoCtrl($scope) {
   };
 
   $scope.save2file = function() {
-    var data =
-      "\t\tTodo List\t\t\n-=x=-=x=-=x=-=x=-=x=-=x=-=x=-=x=-=x=-=x=-=x=-=x=-=x=-=x=-=x=-\n";
-    data += "   no. \t status \t todo\n";
-    // let { text, done } = $scope.todos;
+    var data = "serial number,status,todos\n";
     $scope.todos.map((item, index) => {
-      data += `|\t${index + 1}\t|\t${item.done ? "x" : "-"}\t||\t${
-        item.text
-      }\t\n`;
+      data += `${index + 1},${item.done ? "x" : "-"},"${item.text}"\n`;
     });
-    data +=
-      "-=x=-=x=-=x=-=x=-=x=-=x=-=x=-=x=-=x=-=x=-=x=-=x=-=x=-=x=-=x=-\n\n\n\t\tDev: Omkar Kirpan\t\t";
+    data += `\n,Total todos,${$scope.todos.length}`;
     var blob = new Blob([data], { type: "application/text" });
     const url = URL.createObjectURL(blob);
     console.log("url", url);
     console.log("blob", blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = "todos.txt";
+    a.download = "todos.csv";
     a.click();
   };
 }
