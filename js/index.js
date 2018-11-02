@@ -18,4 +18,16 @@ function TodoCtrl($scope) {
       return !todo.done;
     });
   };
+
+  $scope.save2file = function() {
+    var data = JSON.stringify($scope.todos);
+    var blob = new Blob([data], { type: "application/text" });
+    const url = URL.createObjectURL(blob);
+    console.log("url", url);
+    console.log("blob", blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "todos.txt";
+    a.click();
+  };
 }
