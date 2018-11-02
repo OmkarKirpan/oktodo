@@ -48,7 +48,7 @@ body {
   font-size: 2em;
   font-family: Raleway;
   color: rgb(255, 255, 255);
-  transition: all 0.5s;
+  transition: color 0.5s;
 }
 
 .clear-btn:hover {
@@ -103,7 +103,17 @@ h1 {
   font-family: Raleway;
   padding: 20px;
   margin: 0;
-  color: #aaa;
+  color: white;
   text-align: center;
   background-color: #673ab7;
+}
+
+.todos-export {
+  float: right;
+  color: black;
+  transition: color 0.5s;
+}
+
+.todos-export:hover {
+  color: white;
 }
