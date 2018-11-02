@@ -9,8 +9,12 @@ function TodoCtrl($scope) {
   };
 
   $scope.addTodo = function() {
-    $scope.todos.push({ text: $scope.formTodoText, done: false });
-    $scope.formTodoText = "";
+    if ($scope.formTodoText == "") {
+      console.log("Please enter something");
+    } else {
+      $scope.todos.push({ text: $scope.formTodoText, done: false });
+      $scope.formTodoText = "";
+    }
   };
 
   $scope.clearCompleted = function() {
