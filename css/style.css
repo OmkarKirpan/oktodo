@@ -32,7 +32,8 @@ body {
   font-family: Raleway;
   font-size: 2em;
   height: 100%;
-  transition: all 0.5s;
+  transition: color 0.5s;
+  transition: background 0.5s;
 }
 
 .add-btn:hover {
@@ -49,6 +50,7 @@ body {
   font-family: Raleway;
   color: rgb(255, 255, 255);
   transition: color 0.5s;
+  transition: background 0.5s;
 }
 
 .clear-btn:hover {
