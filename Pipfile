@@ -8,6 +8,7 @@ flask-triangle = "*"
 Flask = "*"
 
 [dev-packages]
+pylint = "<2.0.0"
 
 [requires]
 python_version = "2.7"
