@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 flask-triangle = "*"
 Flask = "*"
+gunicorn = "*"
 
 [dev-packages]
 pylint = "<2.0.0"
