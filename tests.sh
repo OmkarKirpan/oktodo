@@ -1,5 +1,5 @@
 sleep 5
-if curl todo | grep -q '<title>Todo list with AngularJS</title>'; then
+if curl web | grep -q '<title>Todo list with AngularJS</title>'; then
   echo "Tests passed!"
   exit 0
 else
