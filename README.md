@@ -4,6 +4,7 @@
 ![angular](https://img.shields.io/badge/angular-1.0.7-brightgreen.svg)
 ![python](https://img.shields.io/badge/python-2.7-brightgreen.svg)
 ![platform](https://img.shields.io/conda/pn/conda-forge/python.svg)
+[ ![Codeship Status for omkarkirpan/todo-app](https://app.codeship.com/projects/c4a24110-c30f-0136-c729-6a46992131ea/status?branch=master)](https://app.codeship.com/projects/313871)
 
 A very basic todo app I made messing around with angular JS
 
@@ -32,7 +33,7 @@ $ flask run
 When contributing to this repository, please first discuss the change you wish to make via issue,
 email, or any other method with the owners of this repository before making a change.
 
-### *Pull Request Process
+### Pull Request Process
 
 1. Ensure any install or build dependencies are removed before the end of the layer when doing a
    build.
