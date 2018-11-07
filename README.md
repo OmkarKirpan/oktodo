@@ -1,4 +1,4 @@
-#Flask - AngularJS Todo List
+#[Flask - AngularJS Todo List](https://oktodo.herokuapp.com/)
 
 ![dependencies](https://img.shields.io/hackage-deps/v/lens.svg)
 ![angular](https://img.shields.io/badge/angular-1.0.7-brightgreen.svg)
@@ -7,6 +7,8 @@
 [ ![Codeship Status for omkarkirpan/todo-app](https://app.codeship.com/projects/c4a24110-c30f-0136-c729-6a46992131ea/status?branch=master)](https://app.codeship.com/projects/313871)
 
 A very basic todo app I made messing around with angular JS
+
+live preview here at https://oktodo.herokuapp.com/
 
 ## Installation
 
